@@ -29,6 +29,16 @@ Optional dependencies:
 Standard *CMake* compilation should work.
 Note that the *libQGLViewer* library needs to be compiled with Qt6.
 
+#### Meson
+
+libQGLViewer and OpenMesh are built automatically from subprojects, if the corresponding system wide packages are not found. 
+Don't forget to properly initialize the submodules.
+
+```meson
+meson setup builddir
+meson compile -C builddir
+```
+
 ### Windows
 
 In this guide we will create a debug build using the MinGW compiler and Qt's Creator IDE, 

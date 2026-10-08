@@ -66,14 +66,6 @@ if(WITH_JET_FITTING)
   target_sources(geo-framework PUBLIC jet-wrapper.cc)
 endif(WITH_JET_FITTING)
 
-if(UNIX)
-  add_custom_command(OUTPUT tags
-    COMMAND etags *.hh *.cc
-    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
-  )
-  target_sources(geo-framework PRIVATE tags)
-endif(UNIX)
-
 target_link_libraries(geo-framework PUBLIC
   ${OPENGL_LIBRARIES}
   ${OPENMESH_LIBRARIES}

@@ -1,0 +1,6 @@
+[submodule "subprojects/OpenMesh"]
+	path = subprojects/OpenMesh
+	url = https://gitlab.vci.rwth-aachen.de:9000/OpenMesh/OpenMesh.git
+[submodule "subprojects/libQGLViewer"]
+	path = subprojects/libQGLViewer
+	url = https://github.com/GillesDebunne/libQGLViewer

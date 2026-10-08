@@ -1,0 +1,6 @@
+option(
+  'with_jet_fitting',
+  type: 'boolean',
+  value: false,
+  description: 'Use jet fitting for normals',
+)
